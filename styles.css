@@ -12,6 +12,7 @@ body {
     text-align: right;
     padding: 20px;
     background-color: beige;
+    flex-wrap: wrap;
 }
 
 .company {
@@ -28,19 +29,24 @@ body {
 #comp_name {
     margin-bottom: 0;
 }
-.links{
+
+.links {
     display: flex;
     align-items: center;
     float: right;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
-.tops{
-    color: #000000; 
-    text-decoration: none; 
+.tops {
+    color: #000000;
+    text-decoration: none;
     margin: 20px;
-    cursor: pointer; 
+    cursor: pointer;
+    font-size: 16px;
 }
-.bars{
+
+.bars {
     display: flex;
     align-items: center;
 }
@@ -66,17 +72,53 @@ body {
     margin-right: 5px;
 }
 
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%); 
-  border: solid 2px white;
-  height: 50px;
-  width: 50px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%);
+    border: solid 2px white;
+    height: 50px;
+    width: 50px;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oversized {
+    width: 90%;
+    background-color: rgb(238, 237, 237);
+    display: flex;
+    justify-content: center;
+    gap: 3rem; 
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+
+.card {
+    margin-bottom: 3rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    will-change: transform, box-shadow;
+}
+.card:hover {
+    transform: scale(1.06); 
 }
 
 @media screen and (max-width: 768px) {
-    #search{
-        width: 20px;
+    .ups {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .company {
+        margin: 0px;
+    }
+
+    .tops {
+        font-size: 14px;
+    }
+    .oversized{
+        width: 100%;
     }
 }
