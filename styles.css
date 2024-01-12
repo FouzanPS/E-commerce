@@ -1,0 +1,82 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.ups {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    padding: 20px;
+    background-color: beige;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#comp_name {
+    margin-bottom: 0;
+}
+.links{
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.tops{
+    color: #000000; 
+    text-decoration: none; 
+    margin: 20px;
+    cursor: pointer; 
+}
+.bars{
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    width: 80%;
+    height: 30px;
+    padding-left: 10px;
+    margin-right: 5px;
+    border-radius: 25px;
+    border: solid 1px white;
+    box-shadow: 0 0 5px rgb(141, 139, 139);
+}
+
+#search-button {
+    width: 70px;
+    height: 30px;
+    background-color: rgb(255, 183, 49);
+    border-radius: 20px;
+    border: solid 1px white;
+    box-shadow: 0 0 5px rgb(106, 103, 103);
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%); 
+  border: solid 2px white;
+  height: 50px;
+  width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    #search{
+        width: 20px;
+    }
+}
